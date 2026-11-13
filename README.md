@@ -10,7 +10,7 @@ Site estático da clínica. Os arquivos-fonte publicados ficam em `public/`; o b
 
 ## Publicar na Vercel a partir do GitHub
 
-Importe o repositório `prospeccaoleadodonto-cloud/Lp-nova` na Vercel e mantenha o **Root Directory** como `.` (raiz do repositório). O arquivo `vercel.json` define `npm run build` como build e `dist` como pasta publicada. Não configure `public` como Root Directory nem troque a Output Directory: isso pode deixar de fora o build e as rotas novas.
+Importe o repositório `prospeccaoleadodonto-cloud/Lp-nova` na Vercel e mantenha o **Root Directory** como `.` (raiz do repositório). O arquivo `vercel.json` define `npm run build` como build, `dist` como pasta publicada e reescreve `/` para `/index.html`. Não configure `public` como Root Directory nem troque a Output Directory: isso pode deixar de fora o build e as rotas novas.
 
 Depois que o projeto estiver conectado ao repositório, publicar a branch `main` cria um novo deployment. Se a integração Git do projeto estiver conectada a outro repositório ou branch, ajuste a conexão no painel Vercel antes de publicar.
 
